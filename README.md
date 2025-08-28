@@ -1,6 +1,7 @@
 # Entropy-Guided CVAE: An Uncertainty-Aware Approach to Generative Oversampling
 
-This repository contains the official implementation for the paper "Entropy-Guided CVAE: An Uncertainty-Aware Approach to Generative Oversampling".
+This repository contains the official implementation for the paper "Uncertainty-Aware Generative Oversampling Using an
+Entropy-Guided Conditional Variational Autoencoder".
 
 ## Setup
 
@@ -11,7 +12,7 @@ Clone the repository and install the required packages. A Python 3.12 virtual en
 git clone [https://github.com/your-username/leo-cvae-project.git](https://github.com/your-username/leo-cvae-project.git)
 cd leo-cvae-project
 
-# Create and activate a virtual environment (e.g., using venv)
+# Create and activate a virtual environment 
 python3 -m venv venv
 source venv/bin/activate
 
