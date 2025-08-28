@@ -1,4 +1,4 @@
-# Entropy-Guided CVAE: An Uncertainty-Aware Approach to Generative Oversampling
+# LEO-CVAE: An Uncertainty-Aware Approach to Generative Oversampling
 
 This repository contains the official implementation for the paper "Uncertainty-Aware Generative Oversampling Using an
 Entropy-Guided Conditional Variational Autoencoder".
