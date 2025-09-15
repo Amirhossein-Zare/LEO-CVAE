@@ -9,8 +9,8 @@ Clone the repository and install the required packages. A Python 3.12 virtual en
 
 ```bash
 # Clone the repository
-git clone [https://github.com/your-username/leo-cvae-project.git](https://github.com/your-username/leo-cvae-project.git)
-cd leo-cvae-project
+git clone https://github.com/Amirhossein-Zare/LEO-CVAE.git
+cd LEO-CVAE
 
 # Create and activate a virtual environment 
 python3 -m venv venv
