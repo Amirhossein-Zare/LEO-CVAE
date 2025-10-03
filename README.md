@@ -1,7 +1,12 @@
 # LEO-CVAE: An Uncertainty-Aware Approach to Generative Oversampling
+[![arXiv](https://img.shields.io/badge/arXiv-2509.25334-b31b1b.svg)](https://arxiv.org/abs/2509.25334)
 
 This repository contains the official implementation for the paper "Uncertainty-Aware Generative Oversampling Using an
 Entropy-Guided Conditional Variational Autoencoder".
+
+> **Abstract:** Class imbalance remains a major challenge in machine learning, especially for high-dimensional biomedical data where nonlinear manifold structures dominate. Traditional oversampling methods such as SMOTE rely on local linear interpolation, often producing implausible synthetic samples. Deep generative models like Conditional Variational Autoencoders (CVAEs) better capture nonlinear distributions, but standard variants treat all minority samples equally, neglecting the importance of uncertain, boundary-region examples emphasized by heuristic methods like Borderline-SMOTE and ADASYN.
+We propose Local Entropy-Guided Oversampling with a CVAE (LEO-CVAE), a generative oversampling framework that explicitly incorporates local uncertainty into both representation learning and data generation. To quantify uncertainty, we compute Shannon entropy over the class distribution in a sample's neighborhood: high entropy indicates greater class overlap, serving as a proxy for uncertainty. LEO-CVAE leverages this signal through two mechanisms: (i) a Local Entropy-Weighted Loss (LEWL) that emphasizes robust learning in uncertain regions, and (ii) an entropy-guided sampling strategy that concentrates generation in these informative, class-overlapping areas.
+Applied to clinical genomics datasets (ADNI and TCGA lung cancer), LEO-CVAE consistently improves classifier performance, outperforming both traditional oversampling and generative baselines. These results highlight the value of uncertainty-aware generative oversampling for imbalanced learning in domains governed by complex nonlinear structures, such as omics data.
 
 ## Setup
 
@@ -58,3 +63,19 @@ Once the data has been preprocessed and placed in the main project directory, th
 ```bash
 python main.py
 ```
+
+
+## Citation
+
+To cite this work, please use the following BibTeX entry:
+
+```bibtex
+@misc{zare2025uncertaintyawaregenerativeoversamplingusing,
+      title={Uncertainty-Aware Generative Oversampling Using an Entropy-Guided Conditional Variational Autoencoder}, 
+      author={Amirhossein Zare and Amirhessam Zare and Parmida Sadat Pezeshki and Herlock and Rahimi and Ali Ebrahimi and Ignacio Vázquez-García and Leo Anthony Celi},
+      year={2025},
+      eprint={2509.25334},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2509.25334}, 
+}
